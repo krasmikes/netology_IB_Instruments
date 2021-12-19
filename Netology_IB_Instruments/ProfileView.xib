@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileView" customModule="Netology_IB_Instruments" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarImageView" destination="Lgf-Ql-Ei3" id="Hfw-2M-rxt"/>
+                <outlet property="birthdateLabel" destination="uN4-kv-nL7" id="uKo-Ep-Iao"/>
+                <outlet property="cityLabel" destination="qH9-mZ-GA2" id="I2I-dx-UVC"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="JMW-i1-iWD"/>
+                <outlet property="nameLabel" destination="uEK-eG-5jU" id="JQb-vW-fRj"/>
+                <outlet property="textView" destination="lXk-bu-4bm" id="R3s-F7-Lyh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="381"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deamon" translatesAutoresizingMaskIntoConstraints="NO" id="Lgf-Ql-Ei3" userLabel="Avatar View">
+                    <rect key="frame" x="10" y="10" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="9ge-Id-jgq"/>
+                        <constraint firstAttribute="width" secondItem="Lgf-Ql-Ei3" secondAttribute="height" multiplier="1:1" id="tlO-HN-zmQ"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9zp-tT-Ujf">
+                    <rect key="frame" x="120" y="10" width="256" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEK-eG-5jU" userLabel="Name Label">
+                            <rect key="frame" x="0.0" y="0.0" width="256" height="26.5"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата рождения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uN4-kv-nL7" userLabel="Birthdate Label">
+                            <rect key="frame" x="0.0" y="36.5" width="256" height="27"/>
+                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qH9-mZ-GA2" userLabel="City Label">
+                            <rect key="frame" x="0.0" y="73.5" width="256" height="26.5"/>
+                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="qH9-mZ-GA2" firstAttribute="width" secondItem="uEK-eG-5jU" secondAttribute="width" id="4Ej-A8-F0r"/>
+                        <constraint firstAttribute="trailing" secondItem="uEK-eG-5jU" secondAttribute="trailing" id="CD7-qE-dA8"/>
+                        <constraint firstItem="uN4-kv-nL7" firstAttribute="width" secondItem="uEK-eG-5jU" secondAttribute="width" id="lG9-sj-yb3"/>
+                    </constraints>
+                </stackView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lXk-bu-4bm">
+                    <rect key="frame" x="10" y="120" width="366" height="251"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="lXk-bu-4bm" firstAttribute="top" secondItem="Lgf-Ql-Ei3" secondAttribute="bottom" constant="10" id="7XM-0B-vMM"/>
+                <constraint firstAttribute="trailing" secondItem="9zp-tT-Ujf" secondAttribute="trailing" constant="10" id="9cG-16-9ek"/>
+                <constraint firstItem="9zp-tT-Ujf" firstAttribute="top" secondItem="Lgf-Ql-Ei3" secondAttribute="top" id="JLo-Hh-zrj"/>
+                <constraint firstItem="Lgf-Ql-Ei3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="M96-VP-fNv"/>
+                <constraint firstItem="9zp-tT-Ujf" firstAttribute="bottom" secondItem="Lgf-Ql-Ei3" secondAttribute="bottom" id="UJC-Eb-gTo"/>
+                <constraint firstItem="lXk-bu-4bm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="ani-eW-5tl"/>
+                <constraint firstAttribute="trailing" secondItem="lXk-bu-4bm" secondAttribute="trailing" constant="10" id="r0k-Sd-duz"/>
+                <constraint firstItem="9zp-tT-Ujf" firstAttribute="leading" secondItem="Lgf-Ql-Ei3" secondAttribute="trailing" constant="10" id="s4J-fe-9qk"/>
+                <constraint firstItem="Lgf-Ql-Ei3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="y4Z-mV-8TE"/>
+                <constraint firstAttribute="bottom" secondItem="lXk-bu-4bm" secondAttribute="bottom" constant="10" id="zL9-ut-Gaw"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-372.46376811594206" y="-678.68303571428567"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="deamon" width="960" height="1280"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
